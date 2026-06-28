@@ -2,42 +2,59 @@
 
 A **Gradio-based Pizza Ordering Application** developed as part of the **FDE Academy – PizzaFlow Applied Project**.
 
-The application provides an interactive pizza ordering experience with dynamic menu loading, cart management, automatic billing, and multiple payment options.
+---
+
+## 📌 Overview
+
+SliceMatic is an interactive pizza ordering system built using **Python** and **Gradio**. The application allows users to build customized pizza orders, manage a shopping cart, generate professional invoices, and place orders using multiple payment methods.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* 👤 Customer registration with **Name** and **Mobile Number** validation
-* 🍕 Dynamic menu loaded from external text files
-* 🫓 Multiple pizza base (crust) options
-* 🧄 Optional toppings
-* 🛒 Shopping cart supporting multiple pizza combinations
-* 💰 Automatic subtotal, discount, GST, and final bill calculation
-* 🎁 **10% discount** for qualifying orders
-* 💳 Multiple payment methods:
+- 👤 Customer Registration
+  - Name Validation
+  - Mobile Number Validation
 
-  * Cash
-  * Card
-  * UPI
-* 🧾 Professional invoice/receipt generation
-* 📝 Local order logging
-* ☁️ Optional Hugging Face Dataset logging for cloud persistence
-* 🎨 Interactive and responsive Gradio user interface
+- 🍕 Dynamic Menu Loading
+  - Pizza Bases
+  - Pizza Types
+  - Toppings
+  - Loaded directly from text files
+
+- 🛒 Shopping Cart
+  - Multiple pizza combinations
+  - Add / Remove items
+  - Running subtotal
+
+- 💰 Billing Engine
+  - Automatic subtotal calculation
+  - 10% discount on orders of 5+ pizzas
+  - 18% GST calculation
+  - Professional invoice generation
+
+- 💳 Payment Methods
+  - Cash
+  - Card
+  - UPI
+
+- 📝 Order Logging
+  - Local log file
+  - Optional Hugging Face Dataset integration
 
 ---
 
 ## 📂 Project Structure
 
-```text
+```
 SliceMatic-Ordering-System/
 │
-├── slicematic_cart.py          # Main application
-├── Types_of_Base.txt           # Pizza base menu
-├── Types_of_Pizza.txt          # Pizza menu
-├── Types_of_Toppings.txt       # Toppings menu
-├── orders_log.txt              # Auto-generated order log
-├── requirements.txt            # Project dependencies
+├── slicematic_cart.py
+├── Types_of_Base.txt
+├── Types_of_Pizza.txt
+├── Types_of_Toppings.txt
+├── orders_log.txt
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
@@ -46,11 +63,11 @@ SliceMatic-Ordering-System/
 
 ## ⚙️ Requirements
 
-* Python 3.10+
-* Gradio
-* huggingface_hub *(optional for cloud logging)*
+- Python 3.10+
+- Gradio
+- huggingface_hub *(Optional)*
 
-Install the required packages:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -58,33 +75,33 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Application
+## ▶️ Run the Application
 
 ```bash
 python slicematic_cart.py
 ```
 
-Once started, Gradio launches a local web application that can be accessed through your browser.
+The application will launch locally in your default browser.
 
 ---
 
 ## 📋 Menu File Format
 
-The application loads menu items from:
+The application loads menu items from
 
-* `Types_of_Base.txt`
-* `Types_of_Pizza.txt`
-* `Types_of_Toppings.txt`
+- Types_of_Base.txt
+- Types_of_Pizza.txt
+- Types_of_Toppings.txt
 
-Each file follows the format:
+Each file follows the format
 
-```text
+```
 ID;Name;Price
 ```
 
-Example:
+Example
 
-```text
+```
 1;Thin Crust;120
 2;Chicago Deep Dish;180
 ```
@@ -93,52 +110,53 @@ Example:
 
 ## 💵 Pricing Rules
 
-| Rule                       |                              Value |
-| -------------------------- | ---------------------------------: |
-| Maximum quantity per combo |                                 10 |
-| Maximum pizzas per order   |                                 10 |
-| Discount                   | 10% (Orders with 5 or more pizzas) |
-| GST                        |       18% (Applied after discount) |
+| Rule | Value |
+|------|-------|
+| Maximum quantity per combo | 10 |
+| Maximum pizzas per order | 10 |
+| Discount | 10% on 5+ pizzas |
+| GST | 18% after discount |
 
 ---
 
-## 💳 Payment Methods
+## 💳 Payment Options
 
-* 💵 Cash
-* 💳 Card
-* 📱 UPI
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Gradio
-* HTML & CSS
-* Hugging Face Hub *(optional)*
-* Python Decimal module for accurate financial calculations
+- 💵 Cash
+- 💳 Card
+- 📱 UPI
 
 ---
 
-## 🔮 Future Enhancements
+## 🛠️ Tech Stack
 
-* 📊 Order History Dashboard
-* 📦 Inventory Management System
-* 👨‍💼 Admin Portal
-* 📧 Email & SMS Notifications
-* 🗄️ Database Integration
-* 🔐 User Authentication
-* 🍳 Kitchen Dashboard with Real-Time Order Queue
-* 📈 Real-Time Inventory Tracking
-* 📱 Mobile-Friendly Responsive UI
-* 📊 Sales Analytics Dashboard
+- Python
+- Gradio
+- HTML
+- CSS
+- Hugging Face Hub *(Optional)*
+- Decimal Module
+
+---
+
+## 🚀 Future Enhancements
+
+- 📊 Order History Dashboard
+- 📦 Inventory Management
+- 👨‍💼 Admin Portal
+- 📧 Email / SMS Notifications
+- 🗄️ Database Integration
+- 🔐 User Authentication
+- 🍳 Kitchen Dashboard
+- 📦 Real-time Inventory Tracking
+- 📈 Sales Analytics Dashboard
 
 ---
 
 ## 👨‍💻 Author
 
 **Madhav Mehta**
-**Ishan Shekar**
-**Shashidharr**
 
 Developed as part of the **FDE Academy – PizzaFlow Applied Project**.
+
+---
+⭐ If you found this project interesting, feel free to star the repository.

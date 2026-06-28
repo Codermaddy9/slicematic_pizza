@@ -49,7 +49,7 @@ SliceMatic is an interactive pizza ordering system built using **Python** and **
 ```
 SliceMatic-Ordering-System/
 │
-├── slicematic_cart.py
+├── app.py
 ├── Types_of_Base.txt
 ├── Types_of_Pizza.txt
 ├── Types_of_Toppings.txt

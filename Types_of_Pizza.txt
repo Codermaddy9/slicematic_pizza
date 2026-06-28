@@ -1,0 +1,8 @@
+1;Margherita;299
+2;Chicago Deep Dish;359
+3;Greek Mediterranean;339
+4;Farm House;319
+5;Pepperoni Classic;379
+6;BBQ Chicken;369
+7;Paneer Tikka;329
+8;California Veggie;309

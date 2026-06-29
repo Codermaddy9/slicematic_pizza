@@ -154,9 +154,9 @@ Example
 
 ## 👨‍💻 Author
 
-**Madhav Mehta**
-**Ishan Shekhar**
-**Shashidharr**
+- **Madhav Mehta**
+- **Ishan Shekhar**
+- **Shashidharr**
 
 Developed as part of the **FDE Academy – PizzaFlow Applied Project**.
 

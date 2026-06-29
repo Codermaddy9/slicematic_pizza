@@ -31,6 +31,7 @@ DISCOUNT_RATE      = Decimal("0.10")
 GST_RATE           = Decimal("0.18")
 MAX_QTY            = 10
 MAX_ORDER_QTY      = 10
+MAX_ITEM_PRICE     = Decimal("10000")
 LOG_FILE           = os.path.join(os.path.dirname(os.path.abspath(__file__)), "orders_log.txt")
 MENU_FILES = {
     "base":    "Types_of_Base.txt",
@@ -57,6 +58,9 @@ def load_menu_file(filepath: str) -> list[dict]:
                 continue
             try:
                 price = Decimal(price_str)
+                if price >= MAX_ITEM_PRICE:
+                    print(f"WARNING: {filepath} line {line_num} price exceeds limit (≥10k) — skipped.", file=sys.stderr)
+                    continue
             except Exception:
                 print(f"WARNING: {filepath} line {line_num} bad price — skipped.", file=sys.stderr)
                 continue
